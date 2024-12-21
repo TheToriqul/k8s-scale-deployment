@@ -90,7 +90,7 @@ The architecture demonstrates how the Kubernetes Deployment Controller manages a
    ```
 2. Scale the deployment:
    ```bash
-   kubectl scale deployment nginx-deployment --replicas=7
+   kubectl scale deployment nginx-deployment --replicas=5
    ```
 3. Verify scaling:
    ```bash

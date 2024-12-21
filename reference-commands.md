@@ -63,14 +63,14 @@ kubectl describe rs -l app=nginx-deployment
 ### Manual Scaling
 ```bash
 # Scale deployment to 7 replicas
-kubectl scale deployment nginx-deployment --replicas=7
+kubectl scale deployment nginx-deployment --replicas=5
 
 # Verify scaling operation
 kubectl get deployment nginx-deployment
 kubectl get pods -l app=nginx-deployment
 
 # Scale down to 4 replicas
-kubectl scale deployment nginx-deployment --replicas=4
+kubectl scale deployment nginx-deployment --replicas=2
 
 # Verify scale-down
 kubectl get pods -l app=nginx-deployment -w
